@@ -22,7 +22,7 @@ process.on('SIGINT', function() {
     console.log('Application successfully shutdown');
     process.exit(0);
 });
-
+	 	 	 	
 app.set("view engine", "ejs");
 
 app.get('/', (req, res) => {
@@ -40,7 +40,7 @@ app.get('/user', (req, res) => {
             }
             const data = {teammembers: teammembers};
             console.log(teammembers);
-            res.render('user', data);        
+            res.render('user', data);
         });
 });
 
